@@ -30,6 +30,10 @@ def solve(k):
 			b = [i**exp for i in set2]
 			if sum(a) != sum(b):
 				things_are_ok = False
+				if(exp > 3):
+					print exp
+					print set1
+					print set2
 			exp += 1
 
 		if things_are_ok:
